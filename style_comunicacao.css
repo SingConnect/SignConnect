@@ -5,6 +5,36 @@
     font-family: 'Poppins', sans-serif;
 }
 
+nav {
+    padding-top: 2vh;
+    position: absolute;
+    z-index: 2;
+    padding-left: 5vh;
+    display: flex;
+
+
+
+}
+
+.logo {
+    height: auto;
+    width: 50vh;
+    justify-content: center;
+    justify-items: center;
+    margin-left: 75vh;
+
+}
+
+.retono {
+    width: 8vh;
+    height: 8vh;
+    float: left;
+    justify-content: left;
+    justify-items: left;
+
+
+}
+
 .showcase {
     position: relative;
     right: 0;
@@ -36,22 +66,6 @@
 
 video {
     z-index: 0;
-}
-
-nav {
-    padding-top: 2vh;
-    padding-left: 90vh;
-    position: absolute;
-    align-items: center;
-
-}
-
-img {
-    height: auto;
-    width: 50vh;
-    z-index: 2;
-    position: absolute;
-
 }
 
 .container {
