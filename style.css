@@ -82,14 +82,6 @@ img {
 
 }
 
-.personagem {
-    max-width: 30vh;
-    height: auto;
-    z-index: 2;
-    position: absolute;
-    margin-left: 20vh;
-    margin-top: 10vh;
-}
 
 @media (max-width:700px){
     .showcase video {
@@ -149,14 +141,7 @@ img {
         border: 0px none #ffffff;   
         cursor: pointer;
     }
-    .personagem {
-        max-width: 20vh;
-        height: auto;
-        z-index: 2;
-        position: absolute;
-        margin-left: -10vh;
-        margin-top: 10vh;
-    }   
+
 }
 @media (max-width: 1000px) and (min-width: 700px) {
     .showcase video {
@@ -216,14 +201,7 @@ img {
         border: 0px none #ffffff;   
         cursor: pointer;
     }
-    .personagem {
-        max-width: 27vh;
-        height: auto;
-        z-index: 2;
-        position: absolute;
-        margin-left: -6vh;
-        margin-top: 10vh;
-    }   
+    
 }
 @media (max-width: 1500px) and (min-width: 1000px) {
     .showcase video {
@@ -283,13 +261,6 @@ img {
         border: 0px none #ffffff;   
         cursor: pointer;
     }
-    .personagem {
-        max-width: 35vh;
-        height: auto;
-        z-index: 2;
-        position: absolute;
-        margin-left: -2vh;
-        margin-top: 15vh;
-    }   
+    
 }
 
