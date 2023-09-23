@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test5</title>
 </head>
-<body onload="init()">
+<body>
 <h1>Libras Game</h1>
 <div id="webcam-container"></div>
 <div id="tela">
+    <div id="op"><input type="submit" value="Facil (20s)" onclick="btnFacil()"><input type="submit" value="Médio (10s)" onclick="btnMedio()"><input type="submit" value="Dificio (5s)" onclick="btnDificio()"></div>
     <label id="time"></label><br>
     <label id="score"></label><br>
     <label id="letra"></label><br>
@@ -20,7 +21,7 @@
     const URL = "https://teachablemachine.withgoogle.com/models/lDwGWPq21/";
 
     var model, webcam, labelContainer, maxPredictions,
-    letras = ['b', 'c', 'd', 'f', 'g', 'm', 'a', 'e', 'i', 'o', 'u'], letra = letras[Math.floor(Math.random() * letras.length)], score = 0, escolher = false, tempo = 20,
+    letras = ['b', 'c', 'd', 'f', 'g', 'm', 'a', 'e', 'i', 'o', 'u'], letra = letras[Math.floor(Math.random() * letras.length)], score = 0, escolher = false, tempo,
     labelScore = document.getElementById("score"), labelLetra = document.getElementById("letra"), labelTempo = document.getElementById("time"),
     divTela = document.getElementById("tela");
 
@@ -95,6 +96,24 @@
                 };
             }
         });
+    }
+    function btnFacil() {
+        let op = document.getElementById("op");
+        tempo = 20;
+        op.style.display = "none";
+        init();
+    }
+    function btnMedio() {
+        let op = document.getElementById("op");
+        tempo = 10;
+        op.style.display = "none";
+        init();
+    }
+    function btnDificio() {
+        let op = document.getElementById("op");
+        tempo = 5;
+        op.style.display = "none";
+        init();
     }
 </script>
 </body>
