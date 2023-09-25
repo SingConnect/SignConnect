@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test5</title>
+    <title>Libras Game</title>
 </head>
 <body>
 <h1>Libras Game</h1>
@@ -18,7 +18,7 @@
 <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
 <script type="text/javascript">
-    const URL = "https://teachablemachine.withgoogle.com/models/lDwGWPq21/";
+    const URL = "https://teachablemachine.withgoogle.com/models/Vn-uJTd4S/";
 
     var model, webcam, labelContainer, maxPredictions,
     letras = ['b', 'c', 'd', 'f', 'g', 'm', 'a', 'e', 'i', 'o', 'u'], letra = letras[Math.floor(Math.random() * letras.length)], score = 0, escolher = false, tempo,
@@ -34,7 +34,6 @@
         // or files from your local hard drive
         // Note: the pose library adds "tmImage" object to your window (window.tmImage)
         model = await tmImage.load(modelURL, metadataURL);
-        maxPredictions = model.getTotalClasses();
 
         // Convenience function to setup a webcam
         const flip = true; // whether to flip the webcam
