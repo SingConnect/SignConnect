@@ -15,47 +15,43 @@
 
     <section class="showcase">
 
-
-
-
-
         <div class="container">
 
-
-
-            <div class="preview" id="preview">
-
-
+            <div class="info">
+                <div id="label-container"></div>
             </div>
 
+            <div class="preview" id="preview">
+                <div id="webcam-container"></div>
+
+            </div>
 
             <div class="chatbox" id="chatbox">
 
+                <div class="chat-display"></div>
+
+                <div class="input-area">
+                    <textarea class="textbox" rows="2" cols="25" placeholder="Mensagem"></textarea>
+                    <div class="send-button">
+                        <img src="img/enviar.png" id="enviar">
+                    </div>
+                </div>
 
             </div>
-
-
-
-
-
-
-
 
         </div>
 
         <video src="img/onda_dinamica.mp4" muted loop autoplay></video>
 
-
     </section>
-
-
-
-
-
-
 
     <!-- Tag style -->
     <link rel="stylesheet" type="text/css" href="style_comunicacao.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+    <script src="recognition_camera.js"></script>
+    <script src="chat.js"></script>
 
 </body>
 
