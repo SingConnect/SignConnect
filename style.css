@@ -5,6 +5,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    overflow: hidden;
+}
 .showcase {
     position: relative;
     right: 0;
@@ -31,7 +34,7 @@
     height: 100%;
     object-fit: cover;
     opacity: 0.8;
-
+    
 }
 
 video {
